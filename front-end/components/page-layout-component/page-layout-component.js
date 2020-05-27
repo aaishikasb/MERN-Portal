@@ -10,14 +10,14 @@ export default class PageLayoutComponent extends React.Component {
 
     render() {
         return (
-            <div className="page-container">
-                <div className="page-left">
-                    <div className="header-container">
+            <div className='page-container'>
+                <div className='page-left'>
+                    <div className='header-container'>
                         <h1> Placeholder Heading</h1>
                         <span>Subheading</span>
                     </div>
                 </div>
-                <div className="page-right">
+                <div className='page-right'>
                     { this.pageRight }
                 </div>
             </div>

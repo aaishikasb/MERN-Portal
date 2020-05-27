@@ -1,0 +1,20 @@
+@import '../../scss/var/var.scss'
+
+.button-wrapper
+    background: $color-prime
+    text-align: center
+    user-select: none
+
+    padding: $box * 1.5 $box * 3
+    border-radius: $box/2
+    transition: background $ms * .25
+
+    &:hover
+    cursor: pointer
+    background: lighten($color-prime, 15)
+
+    span.button-label
+    color: $color-light
+    font-weight: $font-weight-medium
+    font-size: $box * 1.5
+    text-transform: uppercase
