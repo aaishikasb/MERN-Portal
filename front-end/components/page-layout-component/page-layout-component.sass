@@ -1,0 +1,43 @@
+@import '../../scss/var/var.scss'
+
+.page-container
+    flex-grow: 1
+    display: grid
+    grid-template-columns: auto
+
+    @media screen and (min-width: $responsive)
+        grid-template-columns: 50% auto
+
+    background: url('background.png') no repeat center center fixed
+    background-size: cover
+
+    .page-left
+        display: none
+
+        @media screen and (min-width: $responsive)
+            display: flex
+            justify-content: center
+            align-items:  center
+
+    .page-right
+        display: flex;
+        justify-content: center
+        align-items: center
+        flex-grow: 1
+
+        background-color: $color-light
+
+.header-container
+    padding: 0 $box * 1.5
+    text-align: center
+    text-transform: uppercase
+    color: $color-dark
+
+    h1
+        font-weight: $font-weight-bold
+        font-size: $box * 10
+
+    span 
+        font-weight: $font-weight-medium
+        font-size: $box * 2.5
+        opacity: .65
