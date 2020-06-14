@@ -1,0 +1,40 @@
+@import '../../scss/var/var.scss'
+
+.input-wrapper
+    display:flex
+    flex-direction: column
+
+    span.input-label
+        text-transform: uppercase
+        user-select: none
+        color: rgba($color-dark, .65)
+        
+        font-size: $box * 1.5
+        font-weight: $font-weight-medium
+
+        margin-bottom: $box/2
+
+    .input-container
+        input
+            font-size: $box * 1.5
+            font-weight: $font-weight-light
+
+            padding: $box * 1.25
+            width: 100%
+
+            border-radius: $box/2
+            border: 1px solid  rgba($color-dark, .25)
+
+            transition: border-color $ms * .25, background $ms * .25
+
+            color: $color-dark
+
+            &::placeholder
+                color: rgba($color-dark, .5)
+                user-select: none
+
+            &::hover
+                border-color: rgba($color-prime, .75)
+            
+            &::focus
+                border-color: rgba($color-prime, .05)
