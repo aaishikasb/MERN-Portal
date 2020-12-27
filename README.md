@@ -5,3 +5,7 @@ A Portal with Login, Registration and Logout Features. Based on MERN Stack. Unde
 - Login/Register Portal
 - Logout
 - Protected Routes and Validation
+
+
+### Project Open for Contribution
+Currently inactive.
